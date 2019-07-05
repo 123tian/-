@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 1519px;
+    height: 101px;
+
+}
+.header-bottom{
+    width: 1200px;
+    height: 101px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo{
+     width: 127px;
+    height: 83px;
+    float: left;
+    padding-top: 15px;
+}
+.com{
+    width: 187px;
+    height: 70px;
+    float: right;
+    padding-top: 25px;
+
+}
+.create{
+    width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+.create-right{
+    width: 135px;
+    height: 20px;
+    display: block;
+    float:right;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.create-right a{
+    text-decoration: none;
+
+}
+.create-title{
+    width: 1050px;
+    height: 41px;
+    padding: 10px 140px 0;
+}
+.btns{
+      height: 36px;
+    font: 14px/30px Microsoft Yahei;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 140px 0;
+}
+
+
+.btns input{
+    width: 100px;
+    height: 36px;
+    color: #FF7E00;
+    border-bottom-color: #FF7E00;
+    margin-right: 30px;
+    border-bottom: 1px solid #E0E0E0;
+    position: relative;
+		}
+
+.btns input.cur{
+			/*background-color: #FFF;*/
+		}
+.contentss{
+    width: 1200px;
+    height: 362px;
+    display: block;
+    padding: 20px 0 0 110px;
+}
+.email{
+    width: 1060px;
+    height: 342px;
+
+}
+.prz{
+    height: 53px;
+    position: relative;
+        padding-top: 15px;
+    list-style: none;
+}
+.prz label {
+    width: 105px;
+    height: 38px;
+    text-align: right;
+    padding-right: 30px;
+    font: 14px/38px Microsoft Yahei;
+    float: left;
+
+}
+.warp{
+    width: 580px;
+    height: 38px;
+    float: left;
+    position: relative;
+}
+.warp a{
+    width: 137px;
+    height: 38px;
+    padding: 9px 0 9px 11px;
+    font-size: 12px;
+}
+input.intext {
+    width: 298px;
+    padding: 8px 10px;
+    float: left;
+    margin-right: 12px;
+}
+.level{
+    width: 100%;
+    height: 17px;
+    padding-top: 10px;
+    overflow: hidden;
+    font-size: 10px;
+    margin-left: 138px;
+}
+.level span{
+    width: 106px;
+    height: 16px;
+    float: left;
+    text-align: center;
+        background-color: #EAEAEA;
+}
+.ls{
+    width: 1060px;
+    height: 53px;
+    padding-top: 15px;
+
+}
+
+.ls label{
+    width: 105px;
+    height: 38px;
+    text-align: center;
+    float: left;
+    padding-right: 20px;
+    margin-left: 35px;
+}
+.input-warp-b{
+    width: 580px;
+    height: 38px;
+    float: left;
+    position: relative;
+}
+input.yzm {
+    width: 94px;
+    margin-right: 8px;
+}
+.input-warp-b a{
+    margin-top: 9px;
+    width: 48px;
+    height: 20px;
+    text-decoration: none;
+}
+.checkbox{
+    height: 35px;
+    padding-left: 105px;
+    padding-top: 15px;
+}
+.checkbox label{
+    width: 230px;
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+}
+.checkbox input{
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 4px 8px 0 0 ;
+}
+.checkbox span{
+    width: 84px;
+    height: 20px;
+    float: left;
+    font-size: 12px;
+}
+.checkbox a{
+    width: 126px;
+    height: 19px;
+    text-decoration: none;
+}
+.input-warp-c{
+    width: 580px;
+    height: 43px;
+    position: relative;
+    float: left;
+}
+
+input.insubmit {
+    width: 320px;
+    height: 38px;
+    margin: 5px 0 0 105px;
+    border: 0;
+    background-color: #FF7E00;
+}
+.login-qro{
+    width: 131px;
+    height: 197px;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    float: right;
+    top:100px;
+}
+.login-qro-text{
+    width: 131px;
+    height: 71px;
+    padding-top: 20px;
+}
+.login-qro-text p{
+    width: 131px;
+    height: 51px;
+    font: 700 18px/26px Microsoft Yahei;
+}
+.login-qro-text p span{
+    width: 36px;
+    height: 24px;
+    color: #ff5134;
+}
+.footerr{
+    width: 1519px;
+    height: 112px;
+    margin-top: 40px;
+    border-top: 1px solid #d7d7d7;
+}
+.footerr-link{
+    width: 1519px;
+    height: 51px;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+.footerr-link a{
+    width: 48px;
+    height: 20px;
+    display:inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    padding-right: 600px;
+}
+
+.error_tip{
+    background-color: red;
+    display: none;
+}
+.error_tip span{
+    display: none;
+}

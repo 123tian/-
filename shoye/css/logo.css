@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 1519px;
+    height: 101px;
+
+}
+.header-bottom{
+    width: 1200px;
+    height: 101px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo{
+     width: 127px;
+    height: 83px;
+    float: left;
+    padding-top: 15px;
+}
+.com{
+    width: 187px;
+    height: 70px;
+    float: right;
+    padding-top: 25px;
+
+}
+.logo-main{
+    width: 965px;
+    height: 509px;
+    margin: 0 auto;
+    padding: 40px 0 35px;
+
+}
+.logo-left{
+    width: 415px;
+    height: 370px;
+    float: left;
+    padding-top: 20px;
+}
+.logo-left img{
+    width: 415px;
+    height: 350px;
+}
+.logo-right{
+    width: 340px;
+    height: 434px;
+    float: right;
+    padding: 10px 0;
+    border: 1px solid #E0E0E0;
+
+}
+
+.logo-title{
+    width: 280px;
+    height: 41px;
+    margin: 0 29px;
+}
+.login-title a{
+    width: 104px;
+    height: 30px;
+    float: left;
+    border-bottom: 1px solid #E0E0E0;
+    position: relative;
+}
+
+.login-content{
+    width: 256px;
+    height: 271px;
+    padding: 13px 29px 25px;
+}
+.login-item{
+    width: 280px;
+    height: 287px;
+    display: block;
+}
+.login-item form{
+    width: 280px;
+    height: 243px;
+}
+.prz{
+    width: 280px;
+    height: 52px;
+    position: relative;
+    padding: 7px 0;
+    display: block;
+}
+.input-warp{
+    width: 280px;
+    height: 38px;
+    min-height: 38px;
+    position: relative;
+}
+.input-warp {
+    height: auto!important;
+
+    min-height: 38px;
+    position: relative;
+    z-index: 1;
+}
+.account-icon {
+    width: 15px;
+    height: 15px;
+    /*background-position: -167px -155px;*/
+    /*left: 9px;*/
+    /*top: 12px;*/
+}
+input.intext {
+    width: 238px;
+    height: 30px;
+    padding-left: 30px;
+}
+.input-warp-a{
+    width: 280px;
+    height: 52px;
+    padding: 7px 0;
+    display: block;
+    position: relative;
+}
+.input-warp-a em {
+    width: 81px;
+    height: 38px;
+    display: inline-block;
+    float: left;
+    color: #B0B0B0;
+    cursor: text;
+    position: absolute;
+
+}
+input.intex {
+    width: 100px;
+    height: 38px;
+    padding: 8px 10px;
+}
+
+.hideen{
+    /*width: 280px;*/
+    height: 62px;
+    padding: 7px 0;
+    display: block;
+    width: 100%;
+}
+input.insubmit {
+    width: 100%;
+    height: 38px;
+    border: 0;
+    margin-top: 10px;
+    background-color: #FF7E00;
+    font: 18px/38px Microsoft Yahei;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 1px 0 #EB5E00;
+}
+.link{
+    width: 280px;
+    height: 25px;
+    display: block;
+    list-style: none;
+}
+.link a{
+    text-decoration: none;
+}
+
+.logo-more{
+    width: 338px;
+    height: 90px;
+
+
+}
+.logo-more p{
+    width: 309px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+}
+a {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    margin: 5px 10px 0 30px;
+    text-decoration: none;
+}
+.footer{
+    width: 1519px;
+    height: 112px;
+margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+}
+.footer-link{
+    width: 1519px;
+    height: 51px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+.footer-link a{
+    width: 48px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.footer-link span{
+    width: 1px;
+    height: 11px;
+}

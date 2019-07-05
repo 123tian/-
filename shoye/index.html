@@ -1,0 +1,1645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拉手网主页</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+    <script type="text/javascript" src="js/lunbo.js"></script>
+
+</head>
+<body>
+<script>
+    // var oUl=document.getElementById('nav');
+	// 			var oLi=oUl.getElementsByTagName('li');
+	// 			console.log(oLi);
+	// 			var oList=document.querySelector('list');
+	// 			var oDiv=oList.querySelector('div');
+	// 			console.log(oDiv);
+    //
+	// 			for (var  i=0;i<oLi.length;i++) {
+	// 				oLi[i].index=i;
+    //
+	// 				oLi[i].onclick=function(){
+	// 					for (var j=0;j<oLi.length;j++) {
+	// 						oLi[j].className='';
+	// 						oDiv[j].style.display="none";
+	// 					}
+	// 					this.className='click';
+	// 					oDiv[this.index].style.display='block';
+    //
+	// 				}
+	// 			}
+    //	var aBtn = document.getElementById('btns').getElementsByTagName('input');
+    	$(function(){
+			$('#btns input').click(function() {
+				//失去焦点，避免出现默认的蓝框
+				$(this).blur();
+				//this是原生的对象
+				// alert(this);//弹出[object HTMLInputElement]，说明this就是当前点击的input元素
+
+				//jQuery的this对象使用时要用$()包起来，这样就可以调用jQuery的方法了
+				//给当前元素添加选中样式，为兄弟元素移除选中样式
+				$(this).addClass('cur').siblings().removeClass('cur');
+
+				//$(this).index()获取当前按钮所在层级范围的索引值
+				//显示对应索引的内容区，隐藏其它兄弟内容区
+				$('#contentss div').eq($(this).index()).addClass('active1').siblings().removeClass('active1');
+			});
+		})
+
+</script>
+    <div class="header-top">
+           <div class="header-top-cl">
+               <ul class="hai">
+                   <li>
+                       <a href="#">收藏拉手网</a>
+                        <li><a href="#">帮助</a>
+                        <li><a href="#">反馈</a>
+                    </li>
+               </ul>
+               <ul class="login-c">
+                   <li><a href="#">团购购物车</a>
+                   <li><a href="#">最近浏览</a>
+                   <li><a href="#">我的拉手</a>
+                   <li><a href="#">更多</a>
+                   <li><a href="logo.html">[登陆]</a>
+                   <li><a href="register.html">[注册]</a>
+
+                   </li>
+
+                   </li>
+
+               </ul>
+    </div>
+
+
+    <div class="header-top-o">
+        <img src="img/logo.png" alt="拉受网图片" class="login">
+            <div class="beijing">
+                <a href="#">北京</a>
+
+                <a href="#">切换城市</a>
+
+                <div class="search">
+                    <div class="chore">
+                        <div class="chore-cen">
+
+
+                            <div class="container">
+                                <form action="" class="parent">
+
+                                    <input type="text" id="sw" name="sw" class="input" lang="zh-CN" autocomplete="off" placeholder="请如商品,商家,商圈">
+<!--                                                                  <span class="value">请如商品,商家,商圈</span>-->
+                                    <input type="submit" class="scbut" value="搜索">
+
+                                </form>
+                                  <div class="search-hot">
+                                      <a href="#">淄博张店</a>
+                                      <a href="#">爱康国宾</a>
+                                      <a href="#">体检</a>
+                                      <a href="#">游泳</a>
+                                      <a href="#">水上乐园</a>
+                                      <a href="#">自助餐</a>
+                                      <a href="#">1</a>
+                                      <a href="#">ktv</a>
+                                      <a href="#">温泉</a>
+                                      <a href="#">美食</a>
+
+                                      <div class="comment">
+                                          <a href="#"><img src="img/commitment.png" alt="1"></a>
+
+                                      </div>
+
+                                    </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    <div class="san">
+
+        <div class="san-content">
+            <a href="#">首页</a>
+            <a href="#">身边团购</a>
+            <a href="#">今日新单</a>
+            <a href="#">电影</a>
+            <a href="#">酒店</a>
+            <a href="#">旅游</a>
+            <div class="index-app">
+                 <div class="sort-nav newga ga index_nav_out" p="新版首页">
+                <a href="#">手机上拉网</a>
+
+
+                                          </div>
+
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="main-cl">
+            <div class="index-content">
+
+                <div class="index-filter">
+
+                    <div class="filter-link-warp">
+                        <div class="filter-link-warp-nb">
+                            <h3>
+                                <span>全部区域</span>
+                            </h3>
+
+                            <div class="filter-link-link">
+                                 <ul>
+                                <a href="#">电影</a>
+                                <a href="#">自助餐</a>
+                                <a href="#">经济酒店</a>
+                                <a href="#">门票</a>
+                                <a href="#">休闲零食</a>
+                                <a href="#">地方特长</a>
+                                <a href="#">火锅</a>
+                                <a href="#">ktv</a>
+                                <a href="#">周边游</a>
+                            </ul>
+
+                                <div class="filter-strip">
+                                    <h3>
+                                <span>全部区域</span>
+                            </h3>
+
+                                        <ul>
+                                <a href="#">电影</a>
+                                <a href="#">自助餐</a>
+                                <a href="#">经济酒店</a>
+                                <a href="#">门票</a>
+                                <a href="#">休闲零食</a>
+                                <a href="#">地方特长</a>
+                                <a href="#">火锅</a>
+                                <a href="#">ktv</a>
+                                <a href="#">周边游</a>
+                            </ul>
+
+                                    <div class="filter-link-strip">
+                                          <div class="filter-strip">
+                                    <h3>
+                                <span>全部区域</span>
+                            </h3>
+
+                                        <ul>
+                                <a href="#">电影</a>
+                                <a href="#">自助餐</a>
+                                <a href="#">经济酒店</a>
+                                <a href="#">门票</a>
+                                <a href="#">休闲零食</a>
+                                <a href="#">地方特长</a>
+                                <a href="#">火锅</a>
+                                <a href="#">ktv</a>
+                                <a href="#">周边游</a>
+                            </ul>
+
+
+                                    </div>
+                                             <div class="hot-good">
+                                                 <h2>热门商品</h2>
+                                                     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js大图淡出淡现图片切换代码 - 站长素材</title>
+
+<style>
+*{padding: 0px;margin: 0px;}
+#flash{width:733px;height: 358px;margin: 50px auto;position: relative;}
+#flash #play{width:600px;height: 500px;list-style: none;position:absolute;top:-30px;left:0px;}
+#flash #play li{display: none;position:absolute;top:0px;left:0px;
+    width: 733px;
+    height: 358px;}
+#flash #play li img{float: left;width: 733px;
+    height: 358px;}
+#button{position: absolute;bottom:20px;left:470px;list-style: none;}
+#button li{margin-left: 10px;float: left;}
+#button li div{width:12px;height: 12px;background:#DDDDDD;border-radius: 6px;cursor: pointer;}
+#prev{width:40px;height:63px;background:url(img/1.jpg) 0px 0px;position: absolute;top:205px;left:10px;z-index: 1000;}
+#next{width:40px;height:63px;background:url(img/beijing.png) -40px 0px;position: absolute;top:205px;right:10px;z-index: 1000;}
+#prev:hover{background:url(img/beijing.png) 0px -62px;}
+#next:hover{background:url(img/beijing.png) -40px -62px;}
+</style>
+
+<!--<script type="text/javascript" src="js/script.js"></script>-->
+
+</head>
+<body>
+
+ <div id="flash">
+     <div id="prev"></div>
+     <div id="next"></div>
+	 <ul id="play">
+	 	<li style="display: block;"><img src="img/1.jpg" alt="" /></li>
+	 	<li><img src="img/2.jpg" alt="1" /></li>
+	 	<li><img src="img/3.jpg" alt="2" /></li>
+	 	<li><img src="img/4.jpg" alt="3" /></li>
+	 	<li><img src="img/5.jpg" alt="4" /></li>
+	 	<li><img src="img/6.jpg" alt="5" /></li>
+	 	<li><img src="img/7.jpg" alt="6" /></li>
+	 	<li><img src="img/8.jpg" alt="7" /></li>
+	 </ul>
+	 <ul id="button">
+	 	<li><div style="background: #A10000;"></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 </ul>
+ </div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+                                                     <div class="slider-ul">
+
+                                                     </div>
+
+                                                 </div>
+
+
+
+                                              </div>
+
+                                </div>
+
+
+
+</div>
+                            </div>
+
+                        </div>
+                    <div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+                    <div class="index-strip">
+
+
+                        <h3>
+                            <span>热门团购</span>
+                        </h3>
+
+                        <div class="filter-link">
+                            <ul>
+                                <a href="#">电影</a>
+                                <a href="#">自助餐</a>
+                                <a href="#">经济酒店</a>
+                                <a href="#">门票</a>
+                                <a href="#">休闲零食</a>
+                                <a href="#">地方特长</a>
+                                <a href="#">火锅</a>
+                                <a href="#">ktv</a>
+                                <a href="#">周边游</a>
+                            </ul>
+
+
+                        </div>
+    </div>
+                    </div>
+
+    <div class="good">
+        <div class="good-title">
+            <span>今日新单</span>
+            <span>一周热卖</span>
+            <div class="good-content">
+                <div class="goods">
+                    <div class="goods-goods">
+                        <div class="slider">
+                            <div class="goods-info">
+                                  <div class="float clearfix" >
+                                      <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+
+
+                                                                  </div>
+                                      <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+
+
+                                                                  </div>
+                                      <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                       <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                       <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+
+                                       <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                           <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                         <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                        <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+
+                                                    <div class="nomal">
+                                          <img src="img/img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                        <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                       </div>
+
+                                                 <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+                                                <div class="nomal">
+                                          <img src="img/xxg.jpg" alt="小西瓜">
+                                          <h4>
+                                              <a href="#">【庞各庄镇】小西瓜</a>
+                                              <a href="#">西瓜礼盒一个，可配送可自提</a>
+                                          </h4>
+                                  </div>
+
+                                      </div>
+
+                                      </div>
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <div class="floor-index"></div>
+    <div class="title">休闲娱乐</div>
+
+    <div class="index-goods">
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+        <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+         <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+
+    </div>
+    <div class="floor-mo">
+
+        <a href="#">查看更多的休闲娱乐</a>
+
+    </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+     <div class="index-gooss"></div>
+
+ <div class="floor-mm">
+
+        <a href="#">查看更多的电影</a>
+    </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div> <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+             <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+
+
+
+
+
+     <div class="index-jiudan"></div>
+ <div class="floor-mm">
+        <a href="#">查看更多的酒店</a>
+    </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+
+  <div class="index-shfu"></div>
+ <div class="floor-mm">
+        <a href="#">查看更多的生活服务</a>
+    </div>
+   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+               <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+               <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>   <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+               <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+               <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+
+             </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+
+  <div class="index-lv"></div>
+ <div class="floor-mm">
+        <a href="#">查看更多的旅游</a>
+    </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div><div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+<div class="index-syxz"></div>
+ <div class="floor-mm">
+        <a href="#">查看更多的摄影写真</a>
+    </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+            <div class="nomal">
+                 <img src="img/xxg.jpg" alt="小西瓜">
+                 <h4>
+                     <a href="#">【庞各庄镇】小西瓜</a>
+                     <a href="#">西瓜礼盒一个，可配送可自提</a>
+                 </h4>
+             </div>
+
+
+
+
+<div class="index-lr"></div>
+ <div class="floor-mm">
+        <a href="#">查看更多的丽人</a>
+    </div>
+
+    <div class="hot clearfix">
+
+          <div class="btns" id="btns">
+            <input type="button" value="tab01" class="cur">
+            <input type="button" value="tab02">
+            <input type="button" value="tab03">
+        </div>
+        <div class="contentss" id="contentss">
+            <div class="active1">北京团购</div>
+            <div>热门团购</div>
+            <div>美食团购</div>
+        </div>
+    </div>
+        <div class="contents clearfix" id="contents">
+            <div class="active">
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <div class="hots clearfix" >
+        <img src="13269546224913.jpg" alt="">
+    </div>
+
+    <div class="footer clearfix">
+        <div class="footer-top">
+            <div class="site-info">
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+                </dl>
+ <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+                </dl>
+
+                  <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+                </dl>
+                   <dl>
+                    <dt>服务保障</dt>
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+
+
+                    <dd>
+                        <i class="sice"></i>
+                        <a href="#">团购三宝</a>
+                    </dd>
+                </dl>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
